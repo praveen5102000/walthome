@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    width: 100%;
+    z-index: 2;
+    background-image: linear-gradient(30deg, violet, #3cff3c, #ffce75, white);
+}
+
+.nav-item {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.linkitems {
+    display: flex;
+    justify-content: space-between;
+}
+
+.linkcont {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.nav-link {
+    border: 1px solid rgba(24, 1, 1, 0);
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+
+.nav-link.active{
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.logsch {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 55%;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+}
+
+.login i {
+    margin-left: 40px;
+}
+
+.login i a {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+}
+
+.navbar-brand img {
+    width: 120px;
+    height: auto;
+}
+
+
+
+
+.casecard {
+    overflow: hidden;
+}
+
+.casecard img {
+    transition: 300ms;
+}
+
+.card-body {
+    z-index: 1;
+}
+
+.casecard img:hover {
+    transform: scale(1.3);
+    transition: .5s;
+}
+
+
+.card-body {
+    background-color: rgb(10 132 255);
+}
+section.case {
+    margin-top: 2em;
+}
+
+
+
+.clientbtn .btn-prev {
+    margin: 0;
+    top: 200px;
+    left: 25px;
+}
+
+.clientbtn .btn-next {
+    margin: 0;
+    top: 200px;
+    right: 25px;
+}
+.btn-next {
+    padding: 16px 19px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+}
+
+.btn-prev {
+    padding: 16px 19px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+}
+
+.ft a, .ft1 {
+    text-decoration: none;
+    color: rgb(82 56 56);
+}
+footer {
+    background-image: linear-gradient(30deg, violet, #3cff3c, #ffce75, white);
+}
+
+.head {
+    font-size: 50px;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+@media (max-width:1024px){
+    #con {
+        height: 180vh;
+    }
+    .navbar-brand img {
+        width: 82px;
+        height: auto;
+    }
+    section.case {
+        margin-top: 1em;
+    }
+    .linkcont {
+        width: 54%;
+    }
+}
+
+@media (max-width:600px){
+    .img-fluid {
+        width: 100%;
+        height: auto;
+    }
+    .head {
+        font-size: 30px;
+    }
+    .linkcont {
+        width: 64%;
+    }
+  
+}
